@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    
+
+
+
+    <div class="calculator">
+
+<input type="text" id="num1" placeholder="Enter your First Number"><br><br>
+<input type="text" id="num2" placeholder="Enter your Second Number"><br><br>
+
+<button onclick="Addition()">Add the Values</button><br><br>
+<button onclick="Subtraction()">Subtract the Values</button><br><br>
+<button onclick="Multiply()">Multiply the Values</button><br><br>
+<button onclick="Division()">Divide the Values</button><br><br>
+
+
+<p id="result">
+    Result:
+</p>
+
+
+<script>
+
+function Addition(){
+
+    let num1 = parseFloat(document.getElementById('num1').value);
+    let num2 = parseFloat(document.getElementById('num2').value);
+
+    let result = num1 + num2;
+    document.getElementById('result').innerText = "Result: " + result;
+}
+
+
+function Subtraction(){
+
+let num1 = parseFloat(document.getElementById('num1').value);
+let num2 = parseFloat(document.getElementById('num2').value);
+
+let result = num1 - num2;
+document.getElementById('result').innerText = "Result: " + result;
+}
+
+
+function Multiply(){
+
+let num1 = parseFloat(document.getElementById('num1').value);
+let num2 = parseFloat(document.getElementById('num2').value);
+
+let result = num1 * num2;
+document.getElementById('result').innerText = "Result: " + result;
+}
+
+
+function Division(){
+
+let num1 = parseFloat(document.getElementById('num1').value);
+let num2 = parseFloat(document.getElementById('num2').value);
+
+let result = num1 / num2;
+document.getElementById('result').innerText = "Result: " + result;
+}
+
+
+
+
+
+
+
+</script>
+
+
+    </div>
+</body>
+</html>
